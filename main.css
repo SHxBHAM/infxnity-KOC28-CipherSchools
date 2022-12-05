@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #101010;
+    width: 100%;
+    overflow-y: scroll;
+}
+.container{
+    height: 300vh;
+}
+
+.div1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid;
+}
+
+.div1 .popCard{
+    width: 1200px;
+    height: 400px;
+    background-color: #F0E647;
+    margin-top: 150px;
+    margin-left: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.div1 .popCard h1{
+    font-size: 100px;
+    letter-spacing: -0.4rem;
+    color: transparent;
+    -webkit-text-stroke: #101010 2px;
+    transition: .20s ease-in-out;
+}
+.div1 .popCard h1:hover{
+    color: #101010;
+}
+.div1 #car1{
+    width: 1250px;
+    position: absolute;
+    top: 0%;
+    left: 32%;
+    transition: 0.20s ease-in-out;
+}
+.div1 #car1 :hover{
+    transform: scale(1.5);
+}
+
+.div2{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 100%;
+    border: 2px solid;
+}
+
+.div2 .popCard{
+    width: 1200px;
+    height: 400px;
+    background-color: #F0E647;
+    margin-top: 150px;
+    margin-left: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.div2 .popCard h1{
+    font-size: 100px;
+    letter-spacing: -0.4rem;
+    color: transparent;
+    -webkit-text-stroke: #101010 2px;
+    transition: .20s ease-in-out;
+}
+.div2 .popCard h1:hover{
+    color: #101010;
+}
+.div2 #car2{
+    width: 1050px;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    transition: 0.20s ease-in-out;
+}
+.div2 #car2 :hover{
+    transform: scale(1.5);
+}
+.div3{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 200%;
+    border: 2px solid;
+}
+
+.div3 .popCard{
+    width: 1200px;
+    height: 400px;
+    background-color: #F0E647;
+    margin-top: 150px;
+    margin-left: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.div3 .popCard h1{
+    font-size: 100px;
+    letter-spacing: -0.4rem;
+    color: transparent;
+    -webkit-text-stroke: #101010 2px;
+    transition: .20s ease-in-out;
+}
+.div3 .popCard h1:hover{
+    color: #101010;
+}
+.div3 #car3{
+    width: 1050px;
+    position: absolute;
+    top: 22%;
+    left: 42%;
+    transition: 0.20s ease-in-out;
+}
+.div3 #car3 :hover{
+    transform: scale(1.5);
+}
+
+.popCard p{
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1.5;
+    left: 0px;
+}
+.read{
+    position: absolute;
+    padding: 8px 18px;
+    background: white;
+    color: #F0E647;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all .45s ease;
+    text-decoration: none;
+    top: 80%;
+    left: 5%;
+}
+.read:hover{
+    letter-spacing: 0.5px;
+    transform: scale(1.1);
+    color: #101010;
+}
+
+.carGallery{
+    width: auto;
+    height: 550px;
+    background-color: #F0E647;
+    position: relative;
+}
+.carGallery h1{
+    text-align: center;
+    color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+}
+
+.carGallery .cardHolder{
+    width: 90%;
+    background-color: #101010;
+    height: 400px;
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 15px;
+}
+.carGallery .cardHolder::-webkit-scrollbar{
+    display: none;
+}
+.carGallery .cardHolder .card{
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+}
+.carGallery .cardHolder .card:hover{
+    transform: scale(1.05);
+}
+
+.carGallery .cardHolder .card img{
+    border-radius: 15px 15px 0px 0px;
+    width: 300px;
+    height: 50%;
+}
+.carGallery .cardHolder .card h2{
+    margin-top: 10px;
+}
+.carGallery .cardHolder .card h3{
+    margin-top: 20px;
+}
+
+.carGallery .cardHolder .card button{
+    margin-top: 35px;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    /* border: none; */
+    background-color: #F0E647;
+    cursor: pointer;
+}
+.carGallery .cardHolder .card button:hover{
+    transform: scale(1.05);
+}
+
+.popPlaces{
+    margin: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popPlaces .row{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.placesBox{
+    margin: auto;
+    position: relative;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+    border-radius: 5px;
+}
+.placesBox:hover{
+    background-color: #ffbf00;
+}
+.places{
+    height: 180px;
+    width: 250px;
+    /* border: 2px solid; */
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px;
+}
+
+.popPlaces .row .placesBox .popNames{
+    margin-bottom: 5px;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 250px;
+    text-align: center;
+}
+.popPlaces .row .placesBox:hover{
+    transform: translateY(-10%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
